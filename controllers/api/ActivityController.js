@@ -88,7 +88,7 @@ exports.CreateVideo = [
                     if (result) {
                         console.log("Procesing.....");
                         exec(
-                            `python yolov5/detect.py --weights yolov5/best.pt --source ./public/ActivityVideo/${req.file.filename} --project ./public/output/${folderName} `,
+                            `python yolov5/detect.py --save-txt --weights yolov5/best.pt --source ./public/ActivityVideo/${req.file.filename} --project ./public/output/${folderName} `,
                             (error, stdout, stderr) => {
                                 if (error) {
                                     console.log(`error: ${error.message}`);

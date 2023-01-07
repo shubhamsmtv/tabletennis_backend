@@ -10,7 +10,7 @@ exports.GetCountry = [
                     "iso",
                     "name",
                     "iso3",
-                    "numcode",
+                    "num_code",
                 ]
             });
             return apiResponse.successResponseWithData(res, "List of country", countries);
